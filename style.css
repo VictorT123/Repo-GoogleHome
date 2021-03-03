@@ -1,0 +1,193 @@
+#html {
+    height: 100%;
+    width: 100%;
+}
+
+/*Barre de navigation*/
+#Barre-de-navigation {
+    display: grid;
+    grid-template-columns: 1FR 50px 50px 50px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    ". Gmail images Menu connexion";
+}
+
+a , p {
+    text-decoration: none;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#Gmail {
+    grid-area: Gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#Menu {
+    grid-area: Menu;
+    justify-self: center;
+    align-self: center;
+}
+
+#Connexion {
+    grid-area: connexion;
+    justify-self: center;
+    align-self: center;
+    background-color: #4285F4;
+    height: 35px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 33px;
+    border-radius: 5px;
+}
+
+/*barre de navigation*/
+#Recherche-Google {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 225px 75px 75px 50px;
+    grid-template-areas: 
+    ". google ."
+    ". recherche ."
+    ". flexbox ."
+    ". langue .";
+}
+
+#Google {
+    grid-area: google;
+    justify-self: center;
+    align-self: end;
+}
+#Recherche {
+    grid-area: recherche;
+    height: 45px;
+    width: 130%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #E5E5E5;
+    border-radius: 25px;
+}
+
+#Recherche:hover {
+    box-shadow: 1px 1px 5px #E5E5E5;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#btn-recherche {
+    border: none;
+    font-size: 15px;
+    color:  #5F6368;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+#btn-chance {
+    border: none;
+    font-size: 15px;
+    color:  #5F6368;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#btn-recherche:hover {
+    border: 1px solid #5F6368
+}
+#btn-chance:hover {
+    border: 1px solid #5F6368
+}
+
+#langue {
+    grid-area: langue;
+    justify-self: center;
+}
+#English {
+    color: blue;
+}
+
+/*pied de page*/
+
+#Pied-de-page {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 300px 300px 200px 1fr 1fr 1fr;
+    grid-template-rows: 30px 50px;
+    grid-template-areas: 
+    "france . . . . . . . ."
+    "a-propos publicité entreprise fonctionnement carbone info-conso confidentialité condition paramètres";
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 70px;
+    border: middle black;
+}
+
+#France {
+    grid-area: france;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+#A-propos {
+    grid-area: a-propos;
+    justify-self: center;
+    align-self: center;
+}
+#Publicité {
+    grid-area: publicité;
+    justify-self: center;
+    align-self: center;
+}
+#Entreprise {
+    grid-area: entreprise;
+    justify-self: center;
+    align-self: center;
+}
+#Fonctionnement {
+    grid-area: fonctionnement;
+    justify-self: center;
+    align-self: center;
+}
+#Carbone {
+    grid-area: carbone;
+    justify-self: center;
+    align-self: center;
+}
+#infos-conso {
+    grid-area: info-conso;
+    justify-self: center;
+    align-self: center;
+}
+#confidentialité {
+    grid-area: confidentialité;
+    justify-self: center;
+    align-self: center;
+}
+#Condition {
+    grid-area: condition;
+    justify-self: center;
+    align-self: center;
+}
+#Paramètres {
+    grid-area: paramètres;
+    justify-self: center;
+    align-self: center;
+}
